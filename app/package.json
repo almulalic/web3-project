@@ -1,0 +1,61 @@
+{
+	"name": "veramo-react-app",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"dependencies": {
+		"@babel/plugin-syntax-import-assertions": "^7.24.7",
+		"@craco/craco": "^7.1.0",
+		"@testing-library/jest-dom": "^5.17.0",
+		"@testing-library/react": "^13.4.0",
+		"@testing-library/user-event": "^13.5.0",
+		"@types/jest": "^27.5.2",
+		"@types/node": "^16.18.101",
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
+		"@veramo/core": "^6.0.0",
+		"@veramo/did-provider-peer": "^6.0.0",
+		"@veramo/did-resolver": "^6.0.0",
+		"crypto": "^1.0.1",
+		"dotenv": "^16.4.5",
+		"ethr-did-resolver": "^10.1.9",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"react-native": "^0.74.2",
+		"react-native-sqlite-storage": "^6.0.1",
+		"react-native-web": "^0.19.12",
+		"react-router-dom": "^6.24.0",
+		"react-scripts": "5.0.1",
+		"typescript": "^4.9.5",
+		"web-did-resolver": "^2.0.27",
+		"web-vitals": "^2.1.4"
+	},
+	"scripts": {
+		"start": "craco start",
+		"build": "craco build",
+		"test": "craco test",
+		"eject": "react-scripts eject",
+		"listIdentifiers": "yarn ts-node --esm ./cli/listIdentifiers.ts",
+		"createIdentifier": "yarn ts-node --esm ./cli/createIdentifier.ts",
+		"createCredential": "yarn ts-node --esm ./cli/createCredential.ts",
+		"verifyCredential": "yarn ts-node --esm ./cli/verifyCredential.ts"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}
